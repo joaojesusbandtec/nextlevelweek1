@@ -6,6 +6,12 @@ const connection = knex({
     connection: {
         filename: path.resolve(__dirname, 'database.sqlite'),
     },
+    useNullAsDefault: true,
 });
 
 export default connection;
+
+// Migration = histórico do banco de dados
+
+// CREATE TABLE points
+// CREATE TABLE users
